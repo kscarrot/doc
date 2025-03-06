@@ -241,4 +241,4 @@ brew install --cask scroll-reverser
 禁用所有输入拓展以及下方所有设置
 
 # 代理配置
-参考[代理配置](https://github.com/kscarrot/blog/wiki/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE)
+参考[代理配置](src/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE.md)
