@@ -26,11 +26,12 @@
 - [Node异步](src/Node异步.md)
 
 #### FP-TS
-- [FP TS 等价](src/FP-TS-Eq-%E7%AD%89%E4%BB%B7%E5%85%B3%E7%B3%BB.md)
-- [FP TS 偏序](src/FP-TS-Ord-%E5%81%8F%E5%BA%8F%E5%85%B3%E7%B3%BB.md)
-- [FP TS 半群](src/FP-TS-Semigroup--%E5%8D%8A%E7%BE%A4.md)
-- [FP TS 幺半群](src/FP-TS-Monoid-%E5%B9%BA%E5%8D%8A%E7%BE%A4.md)
-- [FP TS Applicative](src/FP-TS:Applicative.md)
+- [1.FP TS 等价](src/FP-TS-Eq-%E7%AD%89%E4%BB%B7%E5%85%B3%E7%B3%BB.md)
+- [2.FP TS 偏序](src/FP-TS-Ord-%E5%81%8F%E5%BA%8F%E5%85%B3%E7%B3%BB.md)
+- [3.FP TS 半群](src/FP-TS-Semigroup--%E5%8D%8A%E7%BE%A4.md)
+- [4.FP TS 幺半群](src/FP-TS-Monoid-%E5%B9%BA%E5%8D%8A%E7%BE%A4.md)
+- [5.FP TS 函子](src/FP-TS-Functor-函子.md)
+- [FP TS 应用函子](src/FP-TS:Applicative.md)
 - [FP TS 范畴](src/FP-TS-Category-%E8%8C%83%E7%95%B4.md)
 
 ### F#

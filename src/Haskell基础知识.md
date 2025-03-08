@@ -136,3 +136,51 @@ putStrLn $ show $ 1 + 1
 ```haskell
 putStrLn . show $ 1 + 1
 ```
+
+## 注释
+
+```haskell
+-- 这是单行注释
+
+{-
+    这是多行注释
+    多行注释可以快速用来屏蔽一段代码
+-}
+```
+
+
+## 模块
+
+
+
+```haskell
+-- Greetings.hs 声明模块名 和 导出的内容
+module Greetings (sayHello) where
+
+sayHello :: IO ()
+sayHello = putStrLn "Hello"
+```
+
+
+```haskell
+-- Say.hs
+import Greetings
+
+main :: IO ()
+main = do
+    Greetings.sayHello
+-- bash: runghc Say.hs then print Hello
+```
+
+引入时可以指定要导出的内容
+
+```haskell
+-- Say.hs
+import Greetings (sayHello)
+
+main :: IO ()
+main = do
+    sayHello
+-- bash: runghc Say.hs then print Hello
+```
+
