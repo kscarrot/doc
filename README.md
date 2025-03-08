@@ -31,8 +31,8 @@
 - [3.FP TS 半群](src/FP-TS-Semigroup--%E5%8D%8A%E7%BE%A4.md)
 - [4.FP TS 幺半群](src/FP-TS-Monoid-%E5%B9%BA%E5%8D%8A%E7%BE%A4.md)
 - [5.FP TS 函子](src/FP-TS-Functor-函子.md)
-- [FP TS 应用函子](src/FP-TS:Applicative.md)
-- [FP TS 范畴](src/FP-TS-Category-%E8%8C%83%E7%95%B4.md)
+- [6.FP TS 应用函子](src/FP-TS:Applicative.md)
+- [7.FP TS 范畴](src/FP-TS-Category-%E8%8C%83%E7%95%B4.md)
 
 ### F#
 - [F# 安装](src/Fsharp安装.md)
