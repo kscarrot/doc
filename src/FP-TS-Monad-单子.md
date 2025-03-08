@@ -232,6 +232,41 @@ const flattened = nestedPromise.then(x => x); // Promise<number>
 const identityKleisli = (a: A): M<A> => of(a);  
 ```
 
+实例演示
+```typescript
+// 恒等态射：A → M<A>  
+const of = <A>(a: A): Promise<A> => Promise.resolve(a);  
+
+// 验证恒等律  
+const fetchUser = (id: number): Promise<User> => { ... };  
+
+// 左单位元  
+const leftId = (id: number) =>  
+  of(id).then(fetchUser); // 等价于 fetchUser(id)  
+
+// 右单位元  
+const rightId = (userPromise: Promise<User>) =>  
+  userPromise.then(of); // 等价于 userPromise  
+
+```
+
+实例
+```typescript
+// 定义单子的 flatMap 和 of  
+const flatMap = <A, B>(ma: Promise<A>, f: (a: A) => Promise<B>): Promise<B> =>  
+  ma.then(f);  
+
+const of = <T>(x: T): Promise<T> => Promise.resolve(x);  
+
+// Kleisli 箭头  
+const fetchUser = (id: number): Promise<User> => { ... };  
+const fetchPosts = (user: User): Promise<Post[]> => { ... };  
+
+// 组合为 Kleisli 范畴的态射  
+const fetchUserPosts = (id: number): Promise<Post[]> =>  
+  flatMap(fetchUser(id), user => fetchPosts(user));  
+```
+
 这样我们就可以把`K`中的变换映射到`TS`
 
 |  性质	 |  K	 | TS |
@@ -266,4 +301,4 @@ const headInverse: Option<number> = option.chain(head([1, 2, 3]), inverse)
 # 总结
 
 函数式编程提供了许多通用的方法用来解决带副作用的函数的组合问题
-比如 函子,应用函子,单子,他们都是用来组合不同函数的抽象工具
+比如 函子,应用函子,单子,他们都是用来组合不同函数的抽象工具  
