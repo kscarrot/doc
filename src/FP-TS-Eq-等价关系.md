@@ -1,3 +1,10 @@
+---
+tags:
+  - 函数式
+  - 离散数学
+---
+
+
 翻译自[fp-ts-doc](https://dev.to/gcanti/getting-started-with-fp-ts-setoid-39f3),自己记录用,侵删.
 
   这个系列博客我想讨论一下关于"类型类"和"实例",让我们来看看在`fp-ts`中他们是什么样还有如何被描述的.

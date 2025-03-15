@@ -117,7 +117,12 @@ code ~/.zshrc
 ##    # other plugins...
 ##    zsh-autosuggestions
 ##    zsh-syntax-highlighting
+##    git
+##    sudo
+##    Z
 ## )
+
+绑定一些常用的插件
 
 ## 顺手把主题改了
 ## ZSH_THEME="half-life"
@@ -242,3 +247,22 @@ brew install --cask scroll-reverser
 
 # 代理配置
 参考[代理配置](src/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE.md)
+
+
+# shell工具
+```bash
+brew install ripgrep
+brew install bat  
+brew install eza
+brew install fd
+brew install zoxide
+# echo 'eval "$(zoxide init zsh --cmd z)"' >> ~/.zshrc
+```
+
+[rg 用户指南](https://gitcode.gitcode.host/docs-cn/ripgrep-docs-cn/GUIDE.html)
+
+[bat 用户指南](https://github.com/sharkdp/bat/blob/master/doc/README-zh.md)
+
+[eza 用户指南](https://eza.rocks/)
+
+[fd 用户指南](https://github.com/cha0ran/fd-zh?tab=readme-ov-file#how-to-use)

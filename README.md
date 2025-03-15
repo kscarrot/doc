@@ -37,7 +37,7 @@
 ### F#
 - [F# 安装](src/Fsharp安装.md)
 - [F# 基本语法](src/Fsharp基本语法.md)
-- [F# 练习](src/FsharpKatas.md)
+- [F# 练习](FP-Katas.md)
 
 ### HASKELL
 - [haskell基础](src/haskell%E5%9F%BA%E7%A1%80.md)
