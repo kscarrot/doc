@@ -9,13 +9,93 @@ tags:
 > 推论: 类型越精确,约束条件越多,集合覆盖的范围越小
 
 
-## 集合的自然定义:
-* 全集: unknown => 上下文中所有的集合都是它的子集
-* 空集: never => 没有任何元素的集合
-* 子集: A extends B  => 对任意e属于A都有e属于B
-* 交集: A & B => e属于A且e属于B
-* 并集:  A | B => e属于A或e属于B
-* 补集:  A - B => e属于A且e不属于B
+## 类型的集合定义
+
+### unknown 
+
+$$\forall T \in Types,T \subset unknown$$
+
+所有类型的父集,包含所有类型约束的集合
+
+
+### never 
+$$\forall T \in Types,never \subset T$$
+所有类型的子集,空集,不包含任何类型约束
+
+### subType
+`A extends B`
+
+$$\forall e \in A \rightarrow e \in B$$
+
+对任意约束`e`属于`A`都有约束`e`属于`B`
+
+即 满足约束集合A的类型a 一定是满足约束集合B的
+
+或者说 A是B的子类
+
+```typescript
+interface Animal {
+    size: number
+}
+
+interface Cat extends Animal {
+    meow: () => void
+}
+
+interface Colorful {
+    color: string
+}
+
+
+const horse: Animal = { size: 200 }
+const blackCat: Colorful & Cat = { size: 20, color: '#fff', meow: () => console.log('meow') }
+
+const measure = <T extends Animal>(animal: T) => animal.size
+measure(horse)
+measure(blackCat) // OK
+
+
+
+const meme = (cat: Cat) => cat.meow()
+meme(blackCat)
+meme(horse) // Error
+```
+
+### 联合类型(UnionType)
+ 约束的并集  表示 `或` 关系
+ 约束变弱 范围扩大
+
+ > 白色 或者 马
+
+$$A \& B \rightarrow  \forall T \in Types,T \subset A \lor T \subset B$$
+
+
+### 交叉类型(IntersectionType)
+
+ 约束的交集  表示 `且` 关系 约束变强 范围收窄
+$$A \& B \rightarrow  \forall T \in Types,T \subset A \land T \subset B$$
+
+> 白马
+
+### Exclude
+约束的补集
+
+$$A - B \rightarrow  \forall T \in Types,T \subset A \land T \not\subset B$$
+
+
+```typescript
+type Exclude<T, U> = T extends U ? never : T;
+
+type ResponseCode = 0 | 100001 | 100002
+type ErrorCode = Exclude<ResponseCode, 0>
+
+const throwErrorMessage = (code: ErrorCode) => console.error(code)
+
+throwErrorMessage(100001) // ok
+throwErrorMessage(0) // error 
+```
+
+
 
 ## 集合的代数结构
 1. 交换律
