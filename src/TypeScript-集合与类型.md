@@ -15,7 +15,7 @@ tags:
 
 $$\forall T \in Types,T \subset unknown$$
 
-所有类型的父集,包含所有类型约束的集合
+所有类型的父集,全集,包含所有类型约束的集合
 
 
 ### never 
