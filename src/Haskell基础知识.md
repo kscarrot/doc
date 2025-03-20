@@ -131,7 +131,7 @@ putStrLn $ show $ 1 + 1
 和`.`的区别
 
 1. `+`是一个二元运算,`(1+1)`是一个值,没有输入所以不能使用复合操作
-2. `show` 输入一个`Int`返回一个`String`,putStrLn输入一个`String`,返回一个`IO()`,可以进行[[映射#复合]]
+2. `show` 输入一个`Int`返回一个`String`,putStrLn输入一个`String`,返回一个`IO()`,可以进行[复合](./映射.md#复合)
 
 ```haskell
 putStrLn . show $ 1 + 1
