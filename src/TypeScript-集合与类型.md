@@ -66,21 +66,26 @@ meme(horse) // Error
  约束的并集  表示 `或` 关系
  约束变弱 范围扩大
 
- > 白色 或者 马
+ `白色 或者 马`
+
 
 $$
 A \& B \rightarrow  \forall T \in Types,T \subset A \lor T \subset B
 $$
 
 
+
+
 ### 交叉类型(IntersectionType)
 
- 约束的交集  表示 `且` 关系 约束变强 范围收窄
+ 约束的交集  表示 `且` 关系 
+ 约束变强 范围收窄
+`白马`
+
 $$
 A \vert B \rightarrow  \forall T \in Types,T \subset A \land T \subset B
 $$
 
-> 白马
 
 ### Exclude
 约束的补集
