@@ -19,6 +19,7 @@ $$\forall T \in Types,T \subset unknown$$
 
 
 ### never 
+
 $$\forall T \in Types,never \subset T$$
 所有类型的子集,空集,不包含任何类型约束
 
@@ -67,20 +68,26 @@ meme(horse) // Error
 
  > 白色 或者 马
 
-$$A \& B \rightarrow  \forall T \in Types,T \subset A \lor T \subset B$$
+$$
+A \& B \rightarrow  \forall T \in Types,T \subset A \lor T \subset B
+$$
 
 
 ### 交叉类型(IntersectionType)
 
  约束的交集  表示 `且` 关系 约束变强 范围收窄
-$$A \& B \rightarrow  \forall T \in Types,T \subset A \land T \subset B$$
+$$
+A \vert B \rightarrow  \forall T \in Types,T \subset A \land T \subset B
+$$
 
 > 白马
 
 ### Exclude
 约束的补集
 
-$$A - B \rightarrow  \forall T \in Types,T \subset A \land T \not\subset B$$
+$$
+A - B \rightarrow  \forall T \in Types,T \subset A \land T \not\subset B
+$$
 
 
 ```typescript
