@@ -72,8 +72,9 @@ meme(horse) // Error
 
 
 $$
-A \& B \rightarrow  \forall T \in Types,T \subset A \lor T \subset B
+A \vert B \rightarrow  \forall T \in Types,T \subset A \land T \subset B
 $$
+
 
 
 
@@ -85,8 +86,9 @@ $$
 `白马`
 
 $$
-A \vert B \rightarrow  \forall T \in Types,T \subset A \land T \subset B
+A \& B \rightarrow  \forall T \in Types,T \subset A \lor T \subset B
 $$
+
 
 
 ### Exclude
