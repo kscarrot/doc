@@ -7,11 +7,17 @@
 - [VSCODE 配置](src/VsCode配置.md)
 - [Chrome 插件配置](src/Chrome插件配置.md)
 - [Alfred 配置](src/Alfred配置.md)
+- [内网布线方案](src/线路拓扑.md)
 
 ## 知识点
 
 - [正则速查](src/正则速查.md)
 - [AppleScript JXA](src/AppleScript‐JXA.md)
+
+## AI应用
+
+- [AI实践-Cusor基础](src/AI_Cusor基础.md)
+- [AI实践-模板代码生成](src/AI_实例模板代码生成.md)
 
 ## 库
 
