@@ -14,10 +14,10 @@
 - [正则速查](src/正则速查.md)
 - [AppleScript JXA](src/AppleScript‐JXA.md)
 
-## AI应用
+## AI 应用
 
-- [AI实践-Cusor基础](src/AI_Cusor基础.md)
-- [AI实践-模板代码生成](src/AI_实例模板代码生成.md)
+- [AI 实践-Cusor 基础](src/AI_Cusor基础.md)
+- [AI 实践-模板代码生成](src/AI_实例模板代码生成.md)
 
 ## 库
 
@@ -81,8 +81,8 @@
 - [特征值与特征向量](src/线性代数_特征根.md)
 - [特征分解与奇异分解](src/线性代数_特征分解.md)
 
+## 数据结构/算法
 
-## 数据结构
-
-- [链表](src/链表.md)
+- [链表](src/数据结构-链表.md)
+- [链表习题](src/数据结构-链表习题.md)
 - [栈和队列](src/栈和队列.md)
