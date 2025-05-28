@@ -29,7 +29,9 @@
 
 ### TS
 
-- [TypeScript 集合与类型](src/TypeScript-集合与类型.md)
+- [TypeScript-集合与类型](src/TypeScript-集合与类型.md)
+- [Typescript-基本类型](src/Typescript-基本类型.md)
+- [Typescript-响应式与 Ref](src/Typescript-响应式与Ref.md)
 
 #### Node
 
