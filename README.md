@@ -19,7 +19,15 @@
 - [AI 实践-Cusor 基础](src/AI_Cusor基础.md)
 - [AI 实践-模板代码生成](src/AI_实例模板代码生成.md)
 
-## 库
+## 基础
+
+### 网络
+
+- [http](src/网络-http.md)
+
+### 性能优化
+
+- [图片加载优化](src/FE-图片优化.md)
 
 ### koa/egg
 
