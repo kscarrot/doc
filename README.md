@@ -33,6 +33,7 @@
 
 - [Koa3 源码阅读](src/koa3源码阅读.md)
 - [KoaRouter 源码阅读](src/koaRouter源码阅读.md)
+- [浏览器插件快速开发指南](src/浏览器插件开发快速指南.md)
 
 ## 编程语言
 
