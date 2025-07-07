@@ -19,6 +19,7 @@
 - [AI 实践-Cusor 基础](src/AI_Cusor基础.md)
 - [AI 实践-模板代码生成](src/AI_实例模板代码生成.md)
 - [AI SSE-服务器推送流式渲染](src/SSE.md)
+- [AI MCP-Chrome 插件](src/AI-浏览器插件MCP.md)
 
 ## 基础
 
