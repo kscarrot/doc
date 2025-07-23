@@ -8,7 +8,7 @@
 - [Chrome 插件配置](src/Chrome插件配置.md)
 - [Alfred 配置](src/Alfred配置.md)
 - [内网布线方案](src/线路拓扑.md)
-- [git 配置](src/git配置.md)
+- [Git 配置](src/git配置.md)
 
 ## 知识点
 
@@ -105,5 +105,6 @@
 - [栈和队列](src/栈和队列.md)
 - [树](src/数据结构-树.md)
 - [二叉搜索树](src/数据结构-二叉搜索树.md)
+- [Fiber树](src/数据结构-Fiber树.md)
 
 - [算法-一维动态规划](src/算法-一维动态规划.md)
