@@ -75,7 +75,12 @@ git config --global alias.st status
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
+
+git config --global alias.s 'stash'
+git config --global alias.sp 'stash pop'
 ```
+
+
 
 ## 复合操作
 
@@ -88,6 +93,9 @@ git config --global alias.last 'log -1 HEAD'
 
 # 强制推送
 git config --global alias.psf 'push --force-with-lease'
+
+# 撤回本地未推送commit
+git config --global alias.uncmt 'reset --soft HEAD~1'
 ```
 
 # 日志
