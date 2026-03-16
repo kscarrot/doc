@@ -177,7 +177,7 @@ volta pin pnpm@10
 
 非根目录的可以在`pakage.json`里直接拓展根目录的配置
 
-```
+```json
   "volta": {
     "extends": "../package.json"
   }
@@ -257,14 +257,65 @@ brew install eza
 brew install fd
 brew install zoxide
 # echo 'eval "$(zoxide init zsh --cmd z)"' >> ~/.zshrc
+brew install fzf
 ```
 
 [rg 用户指南](https://gitcode.gitcode.host/docs-cn/ripgrep-docs-cn/GUIDE.html)
 
+## rg
+
+```bash
+# 忽略大小写匹配文本
+rg -i "todo|fixme"
+# 匹配特定的文件后缀
+rg "push" -ttypescript 
+# 查看支持的后缀类型
+rg --type-list
+# 只搜文件名 不搜内容
+rg --files | rg "config"
+```
+
+
 [bat 用户指南](https://github.com/sharkdp/bat/blob/master/doc/README-zh.md)
 
-[eza 用户指南](https://eza.rocks/)
 
 [fd 用户指南](https://github.com/cha0ran/fd-zh?tab=readme-ov-file#how-to-use)
 
- 
+
+[eza 用户指南](https://eza.rocks/)
+
+## eza
+
+eza 如果要支持 `icons` 输出的话需要安装相关字体
+
+可以去[Nerd Fonts](https://www.nerdfonts.com/font-downloads) 下载最新的`JetBrainsMono Nerd Font`
+
+安装后切换指定终端的字体展示
+
+
+- iTerms2
+  修改 `Settings>Profiles>Text>Font` 
+
+  每个`Profile`配置是单独的都要配置一遍
+
+- vscode
+  搜索`terminal.integrated.fontFamily`
+  填入`JetBrainsMono NF`
+
+重启终端
+
+```bash
+echo -e "\uf17c  \ue5ff  \ue796  \uf007  \ue5fc"
+```
+
+打出图标可以验证字体配置完成
+
+修改`.zshrc`重启即可
+
+```bash
+alias ls='eza --icons'
+alias ll='eza -l --icons --git -a'
+alias lt='eza --tree --level=2 --icons'
+alias lc="cd \$(eza -D | fzf --reverse) && eza --icons"
+```
+

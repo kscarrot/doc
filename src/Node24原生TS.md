@@ -150,7 +150,7 @@ console.log("文件路径字符串:", templatePathString);
 
 #### 1. 编写 `TypeScript` 代码 (.ts)
 
-代码里包含了类型注解，比如 `const name: string = "Alice";`F
+代码里包含了类型注解，比如 `const name: string = "Alice";`
 
 #### 2.编译/转换 (Transpilation)
 
@@ -256,4 +256,4 @@ module.exports = {
 };
 ```
 
-> 也可以如法炮制其他的禁用功能 selector 可以在https://astexplorer.net/找到对应的节点
+> 也可以如法炮制其他的禁用功能 selector 可以在[astexplorer](https://astexplorer.net) 找到对应的节点

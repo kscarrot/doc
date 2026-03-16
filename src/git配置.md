@@ -96,6 +96,7 @@ git config --global alias.psf 'push --force-with-lease'
 
 # 撤回本地未推送commit
 git config --global alias.uncmt 'reset --soft HEAD~1'
+
 ```
 
 # 日志
@@ -108,6 +109,30 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 git config --global log.decorate auto
 # 使用7位的短哈希而不是40位长哈希
 git config --global log.abbrevCommit true
+```
+
+
+便捷分支操作
+
+```bash
+alias gb="git branch | fzf  --reverse  | sed 's/^[ *]*//' | pbcopy"
+alias gc="git checkout \$(git branch | fzf  --reverse | sed 's/^[ *]*//')"
+source ~/.git-aliases.sh
+```
+
+利用 `fzf` 处理分支序列  接近图形化的操作体验
+
+# 差异统计
+
+```bash
+# 分文件Diff当前分支和指定分支
+git diff master --stat
+
+# Diff 文件变更数
+git diff master --shortstat
+
+## 统计当前分支相对主分支的提交信息 可以加上 | wc -l 来统计行数
+git log master..HEAD --pretty=format:"%h %s"
 ```
 
 # 钩子

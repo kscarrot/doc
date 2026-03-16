@@ -16,11 +16,19 @@
 - [AppleScript JXA](src/AppleScript‐JXA.md)
 
 ## AI 应用
-
-- [AI 实践-Cusor 基础](src/AI_Cusor基础.md)
-- [AI 实践-模板代码生成](src/AI_实例模板代码生成.md)
+- [AI LLM-大模型](src/AI-LLM.md)
+- [AI Prompt-提示词](src/AI-Prompt.md)
+- [AI MCP-模型上下文协议](src/AI-MCP.md)
+- [AI RAG-检索增强生成](src/AI-RAG.md)
+- [AI Agent-智能体](src/AI-Langchain.md)
+- [AI 工作流](src/AI-Workflow.md)
+- [AI 人机交互协议](src/AI-AGUI.md)
+- [AI 语音流](src/AI-语音流.md)
+- [AI 实践-Cusor 基础](src/AI-Cusor基础.md)
+- [AI 实践-模板代码生成](src/AI-实例模板代码生成.md)
 - [AI SSE-服务器推送流式渲染](src/SSE.md)
 - [AI MCP-Chrome 插件](src/AI-浏览器插件MCP.md)
+- [AI 1-BIT LLM](src/AI-1-bit大模型.md)
 
 ## 基础
 
