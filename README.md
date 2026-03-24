@@ -18,7 +18,7 @@
 ## AI 应用
 - [AI LLM-大模型](src/AI-LLM.md)
 - [AI Prompt-提示词](src/AI-Prompt.md)
-- [AI MCP-模型上下文协议](src/AI-MCP.md)
+- [AI ClaudeCode 与 MCP](src/AI-ClaudeCode与MCP.md)
 - [AI RAG-检索增强生成](src/AI-RAG.md)
 - [AI Agent-智能体](src/AI-Langchain.md)
 - [AI 工作流](src/AI-Workflow.md)
