@@ -23,7 +23,7 @@
 - [AI Agent-智能体](src/AI-Langchain.md)
 - [AI 工作流](src/AI-Workflow.md)
 - [AI 人机交互协议](src/AI-AGUI.md)
-- [AI 语音流](src/AI-语音流.md)
+- [AI ASR和TTS](src/AI-ASR和TTS.md)
 - [AI 实践-Cusor 基础](src/AI-Cusor基础.md)
 - [AI 实践-模板代码生成](src/AI-实例模板代码生成.md)
 - [AI SSE-服务器推送流式渲染](src/SSE.md)
