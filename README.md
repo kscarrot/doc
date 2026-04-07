@@ -14,6 +14,7 @@
 
 - [正则速查](src/正则速查.md)
 - [AppleScript JXA](src/AppleScript‐JXA.md)
+- [色彩科学](src/色彩科学.md)
 
 ## AI 应用
 - [AI LLM-大模型](src/AI-LLM.md)
