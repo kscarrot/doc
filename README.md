@@ -33,20 +33,12 @@
 
 ## 基础
 
-### 网络
-
-- [http](src/网络-http.md)
-
-### 性能优化
-
-- [图片加载优化](src/FE-图片优化.md)
-
-### 框架
-
 - [Koa3 源码阅读](src/koa3源码阅读.md)
 - [KoaRouter 源码阅读](src/koaRouter源码阅读.md)
 - [浏览器插件快速开发指南](src/浏览器插件开发快速指南.md)
 - [Node24原生Typescript](src/Node24原生TS.md)
+- [图片加载优化](src/FE-图片优化.md)
+- [http](src/网络-http.md)
 
 ## 编程语言
 
@@ -112,7 +104,7 @@
 
 - [链表](src/数据结构-链表.md)
 - [链表习题](src/数据结构-链表习题.md)
-- [栈和队列](src/栈和队列.md)
+- [栈和队列](src/数据结构-栈和队列.md)
 - [树](src/数据结构-树.md)
 - [二叉搜索树](src/数据结构-二叉搜索树.md)
 - [Fiber树](src/数据结构-Fiber树.md)
