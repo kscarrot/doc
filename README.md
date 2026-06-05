@@ -30,6 +30,10 @@
 - [AI SSE-服务器推送流式渲染](src/SSE.md)
 - [AI MCP-Chrome 插件](src/AI-浏览器插件MCP.md)
 - [AI 1-BIT LLM](src/AI-1-bit大模型.md)
+- [AI 异步调度](src/AI-异步调度.md)
+- [AI ReAct简单实现](https://github.com/QingRiver/agent/wiki/ReAct)
+- [AI LangGraph-AGUI-事件映射](https://github.com/QingRiver/agent/wiki/LangGraph-AGUI-%E4%BA%8B%E4%BB%B6%E6%98%A0%E5%B0%84)
+- [AI LangGraph-AGUI-人在回路](https://github.com/QingRiver/agent/wiki/LangGraph-AGUI-%E4%BA%BA%E5%9C%A8%E5%9B%9E%E8%B7%AF)
 
 ## 基础
 
@@ -73,7 +77,7 @@
 ### HASKELL
 
 - [haskell 基础](src/Haskell基础知识.md)
-- [haskell 数理逻辑练习](src/haskell数理逻辑练习.md)
+- [haskell 数理逻辑练习](src/Haskell数理逻辑练习.md)
 
 ## 数学
 
