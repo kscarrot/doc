@@ -17,13 +17,14 @@
 - [色彩科学](src/色彩科学.md)
 
 ## AI 应用
+- [AI ReAct](https://github.com/QingRiver/agent/wiki/ReAct)
+- [AI ReAct](https://github.com/QingRiver/agent/wiki/RAG)
 - [AI LLM-大模型](src/AI-LLM.md)
 - [AI Prompt-提示词](src/AI-Prompt.md)
 - [AI ClaudeCode 与 MCP](src/AI-ClaudeCode与MCP.md)
-- [AI RAG-检索增强生成](src/AI-RAG.md)
-- [AI Agent-智能体](src/AI-Langchain.md)
-- [AI 工作流](src/AI-Workflow.md)
-- [AI 人机交互协议](src/AI-AGUI.md)
+
+- [AI LangGraph-AGUI-事件映射](https://github.com/QingRiver/agent/wiki/LangGraph-AGUI-%E4%BA%8B%E4%BB%B6%E6%98%A0%E5%B0%84)
+- [AI 人在回路](https://github.com/QingRiver/agent/wiki/LangGraph-AGUI-%E4%BA%BA%E5%9C%A8%E5%9B%9E%E8%B7%AF)
 - [AI ASR和TTS](src/AI-ASR和TTS.md)
 - [AI 实践-Cusor 基础](src/AI-Cusor基础.md)
 - [AI 实践-模板代码生成](src/AI-实例模板代码生成.md)
@@ -31,11 +32,8 @@
 - [AI MCP-Chrome 插件](src/AI-浏览器插件MCP.md)
 - [AI 1-BIT LLM](src/AI-1-bit大模型.md)
 - [AI 异步调度](src/AI-异步调度.md)
-- [AI ReAct简单实现](https://github.com/QingRiver/agent/wiki/ReAct)
-- [AI LangGraph-AGUI-事件映射](https://github.com/QingRiver/agent/wiki/LangGraph-AGUI-%E4%BA%8B%E4%BB%B6%E6%98%A0%E5%B0%84)
-- [AI LangGraph-AGUI-人在回路](https://github.com/QingRiver/agent/wiki/LangGraph-AGUI-%E4%BA%BA%E5%9C%A8%E5%9B%9E%E8%B7%AF)
 
-## 基础
+## NOTE
 
 - [Koa3 源码阅读](src/koa3源码阅读.md)
 - [KoaRouter 源码阅读](src/koaRouter源码阅读.md)
