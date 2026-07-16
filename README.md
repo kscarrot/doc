@@ -10,15 +10,10 @@
 - [内网布线方案](src/线路拓扑.md)
 - [Git 配置](src/git配置.md)
 
-## 知识点
-
-- [正则速查](src/正则速查.md)
-- [AppleScript JXA](src/AppleScript‐JXA.md)
-- [色彩科学](src/色彩科学.md)
 
 ## AI 应用
 - [AI ReAct](https://github.com/QingRiver/agent/wiki/ReAct)
-- [AI ReAct](https://github.com/QingRiver/agent/wiki/RAG)
+- [AI RAG](https://github.com/QingRiver/agent/wiki/RAG)
 - [AI LLM-大模型](src/AI-LLM.md)
 - [AI Prompt-提示词](src/AI-Prompt.md)
 - [AI ClaudeCode 与 MCP](src/AI-ClaudeCode与MCP.md)
@@ -41,6 +36,10 @@
 - [Node24原生Typescript](src/Node24原生TS.md)
 - [图片加载优化](src/FE-图片优化.md)
 - [http](src/网络-http.md)
+
+- [正则速查](src/正则速查.md)
+- [AppleScript JXA](src/AppleScript‐JXA.md)
+- [色彩科学](src/色彩科学.md)
 
 ## 编程语言
 

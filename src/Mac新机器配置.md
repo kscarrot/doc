@@ -206,8 +206,6 @@ brew install --cask scroll-reverser
 
 [obs](https://github.com/obsproject/obs-studio)
 
-[kap](https://github.com/wulkano/Kap)
-
 [tableplus](https://github.com/TablePlus/TablePlus)
 
 # 系统配置
@@ -246,7 +244,7 @@ brew install --cask scroll-reverser
 
 # 代理配置
 
-参考[代理配置](src/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE.md)
+参考[代理配置](./代理配置.md)
 
 # shell 工具
 
@@ -258,6 +256,8 @@ brew install fd
 brew install zoxide
 # echo 'eval "$(zoxide init zsh --cmd z)"' >> ~/.zshrc
 brew install fzf
+
+brew install ffmpeg
 ```
 
 [rg 用户指南](https://gitcode.gitcode.host/docs-cn/ripgrep-docs-cn/GUIDE.html)
@@ -319,3 +319,46 @@ alias lt='eza --tree --level=2 --icons'
 alias lc="cd \$(eza -D | fzf --reverse) && eza --icons"
 ```
 
+
+## ffmepg
+
+之前依赖[kap](https://github.com/wulkano/Kap),现在mac自带的录屏也相当好用
+
+但是压缩率还是有点限制,需要用工具快速转一下
+
+可以通过系统提供*自动操作*
+
+左栏搜索`shell`选择运行shell脚本拖动到右栏
+
+右栏设置 工作流程收到当前`影片文件`位于`访达`设置传递输入为`作为自变量`
+
+脚本内容如下
+
+```bash
+# 循环处理右键选中的所有视频文件
+for f in "$@"
+do
+    # 1. 获取文件所在的目录路径
+    dir=$(dirname "$f")
+    
+    # 2. 获取文件名（去掉路径和扩展名）
+    filename=$(basename "$f")
+    filename="${filename%.*}"
+    
+    # 3. 拼接输出文件的完整路径
+    output="${dir}/${filename}_h265.mp4"
+    
+    # 4. 调用 M4 芯片硬件加速，-q:v 52 降低了画质以换取更小的体积
+    /opt/homebrew/bin/ffmpeg -i "$f" -c:v hevc_videotoolbox -q:v 52 -c:a aac "$output"
+
+	# 5. 查看上一条指令是否执行成功并显示结果
+	if [ $? -eq 0 ]; then
+        osascript -e 'display notification "压缩完成！" with title "FFmpeg 转码成功"'
+    else
+        osascript -e 'display notification "转码过程中发生错误，请检查终端！" with title "FFmpeg 转码失败"'
+    fi
+done
+
+```
+
+这样给媒体文件配置一个快速操作的二级右键菜单
