@@ -1,4 +1,4 @@
-[language-reference](https://learn.microsoft.com/zh-cn/dotnet/fsharp/language-reference/)Ï
+[language-reference](https://learn.microsoft.com/zh-cn/dotnet/fsharp/language-reference/)
 [F# for fun & profit](https://fsharpforfunandprofit.com/)
 
 # Let 绑定

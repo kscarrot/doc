@@ -1,3 +1,10 @@
+---
+tags:
+  - typescript
+---
+
+> 基本类型(Primitive types)
+
 # typeof 操作符
 
 从 [MDN 的文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/typeof)可以知道能够直接区分的类型
@@ -39,7 +46,7 @@ typeof class C {} === "function";
 
 3. 未声明,已声明未赋值的变量都是`undefined`
 
-# Primitive Type
+# Primitive Types
 
 > 源码来自 redash https://github.com/sodiray/radash/blob/master/src/typed.ts
 

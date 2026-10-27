@@ -14,12 +14,10 @@
 ## AI 应用
 - [AI ReAct](https://github.com/QingRiver/agent/wiki/ReAct)
 - [AI RAG](https://github.com/QingRiver/agent/wiki/RAG)
+- [AI LangGraph-AGUI-事件映射](https://github.com/QingRiver/agent/wiki/AGUI)
 - [AI LLM-大模型](src/AI-LLM.md)
 - [AI Prompt-提示词](src/AI-Prompt.md)
 - [AI ClaudeCode 与 MCP](src/AI-ClaudeCode与MCP.md)
-
-- [AI LangGraph-AGUI-事件映射](https://github.com/QingRiver/agent/wiki/LangGraph-AGUI-%E4%BA%8B%E4%BB%B6%E6%98%A0%E5%B0%84)
-- [AI 人在回路](https://github.com/QingRiver/agent/wiki/LangGraph-AGUI-%E4%BA%BA%E5%9C%A8%E5%9B%9E%E8%B7%AF)
 - [AI ASR和TTS](src/AI-ASR和TTS.md)
 - [AI 实践-Cusor 基础](src/AI-Cusor基础.md)
 - [AI 实践-模板代码生成](src/AI-实例模板代码生成.md)
@@ -41,13 +39,14 @@
 - [AppleScript JXA](src/AppleScript‐JXA.md)
 - [色彩科学](src/色彩科学.md)
 
-## 编程语言
+## Code
 
 ### TS
 
 - [TypeScript-集合与类型](src/TypeScript-集合与类型.md)
 - [Typescript-基本类型](src/Typescript-基本类型.md)
-- [Typescript-泛型 Extends](src/Typescript-泛型Extends.md)
+- [Typescript-泛型与拓展](src/Typescript-泛型与拓展.md)
+- [Typescript-映射类型](src/Typescript-映射类型.md)
 - [Typescript-响应式与 Ref](src/Typescript-响应式与Ref.md)
 - [Typescript-事件循环](src/Typescript-事件循环.md)
 - [Typescript-Promise 基础](src/Typescript-Promise基础.md)
@@ -55,7 +54,7 @@
 - [Typescript-异步工具](src/Typescript-基本类型.md)
 - [Typescript-函数式工具](src/Typescript-函数式工具.md)
 
-#### FP-TS
+### FP-TS
 
 - [1.FP TS 等价](src/FP-TS-Eq-等价关系.md)
 - [2.FP TS 偏序](src/FP-TS-Ord-偏序关系.md)
@@ -65,16 +64,14 @@
 - [6.FP TS 应用函子](src/FP-TS:Applicative.md)
 - [7.FP TS 范畴](src/FP-TS-Category-范畴.md)
 
-### F#
 
-- [F# 安装](src/Fsharp安装.md)
-- [F# 基本语法](src/Fsharp基本语法.md)
-- [F# 练习](FP-Katas.md)
-
-### HASKELL
-
+### FP
+- [F# 安装与调试](src/Fsharp安装.md)
+- [F# 基础](src/Fsharp基础知识.md)
+- [F# 练习](src/FP-Katas.md)
 - [haskell 基础](src/Haskell基础知识.md)
 - [haskell 数理逻辑练习](src/Haskell数理逻辑练习.md)
+
 
 ## 数学
 

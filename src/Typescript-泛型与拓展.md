@@ -1,3 +1,6 @@
+> 泛型与拓展(Generics and extends)
+
+
 > TypeScript 泛型扩展的一些区别
 
 # 泛型 `T`
@@ -83,6 +86,29 @@ type R2 = isP<XUnion, XUnit>; // boolen
 type R3 = isPTotal<XUnit, XUnion>; // true
 type R4 = isPTotal<XUnion, XUnit>; // false
 ```
+
+# 泛型 `Expand<T>`
+
+上一节说 `T extends ...` 会把联合展开成每一项。想利用这一点、又不想过滤任何类型时，右边写一个恒成立的条件：
+
+```typescript
+type Expand<T> = T extends unknown ? T : never;
+```
+
+`unknown` 是顶类型，所以每一项都会走真分支，结果还是原来的 `T`。差别只在过程：`A | B` 会先变成 `Expand<A> | Expand<B>`。
+
+用 `[]` 包起来是为了不展开；这里走一遍 `extends` 是为了展开。
+
+
+```typescript
+type Box<T> = { v: T };
+
+type U = "x" | "y";
+type All = Box<U>;                              // { v: "x" | "y" }
+type Each = U extends unknown ? Box<U> : never; // { v: "x" } | { v: "y" }
+```
+
+交叉类型 `A & B` 不会被拆开。
 
 # 泛型约束也满足类型运算
 

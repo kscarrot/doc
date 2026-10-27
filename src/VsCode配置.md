@@ -22,7 +22,56 @@
 
 # 配置
 
-## 全局配置与同步
+## 全局配置
+
+```json
+{
+  // 同步开启FiraCode字体和连字符 优化命令行的字体显示
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code,Microsoft Yahei UI, monospace",
+  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+
+  // 优化Search的性能
+  "search.exclude": {
+    "**/dist": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/dist/**": true,
+    "**/node_modules/**": true
+  },
+
+  // 开启文件折叠 减少测试文件的视觉干扰
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.test.ts, ${capture}.spec.ts",
+    "*.tsx": "${capture}.test.tsx, ${capture}.spec.tsx"
+  },
+
+  // eslint配套的format
+  "prettier.enable": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
+}
+```
 
 ## task
 
